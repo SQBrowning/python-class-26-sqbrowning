@@ -44,3 +44,7 @@ print("The first number multiplied by the second number is ", result)
 # ask the user what is their age
 yourAge = input("What is your age?")
 print("Your age is ", yourAge)
+
+# i am so confused by the instructions
+# unclear how to save or upload
+# need photos pls
