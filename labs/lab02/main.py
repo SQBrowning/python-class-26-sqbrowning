@@ -76,14 +76,18 @@ if q4.upper () == "an ocean" or "ocean":
     # update my counter because they got the answer correct
     counter += 1    # shorthand for counter = counter + 1
 else:   #INCORRECT
-    print("")
+    print("Maybe that was a trick question. Perhaps you SEA now...? Ok that was bad. Let's do the last one.")
     
     # Question 5
-q5 == input
-if q5 ==
+q5 == input("Is Antartica at the North Pole or the South Pole?")
+if q5.upper() == "South Pole":
+# update my counter because they got the answer correct
+    counter += 1    # shorthand for counter = counter + 1
+else:   #INCORRECT
+    print("That one was tricky, too. The Arctic is in the North. 'Ant' is the opposite of that so... you guessed it. The South Pole.")
 
     # Output the score
-print("~ ~ ~ ~ ~ DRUM ROLLLL ~ ~ ~ ~ ~")
+print("~ ~ ~ ~ ~ NOW A DRUM ROLLLL ~ ~ ~ ~ ~")
 print(f"Your final score is: {counter}")
 
     # Give them feedback on their overall score
@@ -94,6 +98,6 @@ elif counter >=3 and counter < 5:
 elif counter >=2 and counter < 3:
     print(f"Eh, I bet you remembered the answer the moment you got one wrong though. Keep it up, {username}!")
 elif counter <= 1:
-    print(f"Either you really don't like Geography or you really like pulling my leg. Thanks for trying anyway tho {username}! :D gg")
+    print(f"Maybe you don't like Geography or you really like pulling my leg. That's okay! Thanks for playing anyway {username}! :D gg")
 
         
