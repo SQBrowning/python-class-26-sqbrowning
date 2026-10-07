@@ -71,9 +71,13 @@ else:   #INCORRECT
 
     # Question 4
     # Use a non-capitol question
-q4 == input
-if q4 == 
-
+q4 == input("Which is bigger: an ocean or a sea?")
+if q4.upper () == "an ocean" or "ocean":
+    # update my counter because they got the answer correct
+    counter += 1    # shorthand for counter = counter + 1
+else:   #INCORRECT
+    print("")
+    
     # Question 5
 q5 == input
 if q5 ==
