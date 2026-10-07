@@ -35,29 +35,28 @@ elif start_quiz == "N" or start_quiz == "n":
 else: # if they type an invalid response, address it
     print("Come again, chief? Do you wanna try some Geography: Y or N?")
 
-    #put our quiz questions here all indented
-    # START OUR QUIZ QUESTIONS
+#put our quiz questions here all indented
+# START OUR QUIZ QUESTIONS
 
-    # Set our counter to 0
+# Set our counter to 0
 counter = 0
 
-    # Question 1
-
-q1 = input("In which country is Alabama located?")
+# Question 1
+print("Here's your first one.")
+q1 = input("In which country is Alabama located?"   )
 if q1 == "U.S.A." or "U.S." or "usa" or "us" or "United States" or "united states" or "Unites States of America" or "united states of america" or "America" or "America":
-        # update my counter because they got the answer correct
-        counter += 1    # shorthand for counter = counter + 1
-        print("See what I mean? You recognized one of our states.")
+    # update my counter because they got the answer correct
+    counter += 1    # shorthand for counter = counter + 1
+    print("See what I mean? You recognized one of our states.")
 else:   #INCORRECT
     print("Already pulling my leg, huh? Maybe you want something out of the U.S. Let's try the next one.")
 
-    # Question 2
-q2 = input("What is the capitol of Japan?")
+# Question 2
+q2 = input("What is the capitol of Japan?"   )
 if q2 == "Tokyo" or "tokyo":
-        # update my counter because they got the answer correct
-        counter += 1    # shorthand for counter = counter + 1
-        print("So you WERE pulling my leg. Nice job. Let's jump to another country.")
-
+    # update my counter because they got the answer correct
+    counter += 1    # shorthand for counter = counter + 1
+    print("So you WERE pulling my leg. Nice job. Let's jump to another country.")
 
     # Question 3
 
@@ -73,7 +72,12 @@ print(f"Your final score is: {counter}")
 
     # Give them feedback on their overall score
 if counter == 5:
-    print("See, I knew you were a Geographer! Too easy.")
-elif counter >=3 and < 5:
-    print("You were playing with me at first but I knew you had it ;)")
+    print(f"See, {username} I knew you were a Geographer! Too easy.")
+elif counter >=3 and counter < 5:
+    print(f"You were playing with me at first, {username} but I knew you had it ;)")
+elif counter >=2 and counter < 3:
+    print(f"Eh, I bet you remembered the answer the moment you got one wrong though. Keep it up, {username}!")
+elif counter <= 1:
+    print(f"Either you really don't like Geography or you really like pulling my leg. Thanks for trying anyway tho {username}! :D gg")
+
         
