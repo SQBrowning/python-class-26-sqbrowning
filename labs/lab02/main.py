@@ -53,18 +53,30 @@ else:   #INCORRECT
 
 # Question 2
 q2 = input("What is the capitol of Japan?"   )
-if q2 == "Tokyo" or "tokyo":
+if q2 == "Tokyo" or "tokyo" or "Kyoto" or "kyoto":
     # update my counter because they got the answer correct
     counter += 1    # shorthand for counter = counter + 1
-    print("So you WERE pulling my leg. Nice job. Let's jump to another country.")
+    print(f"So you WERE pulling my leg. Nice job, {username}. Let's jump to another country.")
+else:   #INCORRECT
+    print("If you guessed Kyoto, I'll give you a point. It USE to be the capitol... for 1000 years. Crazy, right?")
 
     # Question 3
-
+q3 = input("Which continent would you find the Congo?")
+if q3 == "Africa" or "africa":
+    # update my counter because they got the answer correct
+    counter += 1    # shorthand for counter = counter + 1
+    print("Clever clever. You paid attention in Geography. Maybe you'll guess the next one, too.")
+else:   #INCORRECT
+    print("Okay okay, maybe you don't like Geography. Or maybe you need something other than capitols.")
 
     # Question 4
-
+    # Use a non-capitol question
+q4 == input
+if q4 == 
 
     # Question 5
+q5 == input
+if q5 ==
 
     # Output the score
 print("~ ~ ~ ~ ~ DRUM ROLLLL ~ ~ ~ ~ ~")
