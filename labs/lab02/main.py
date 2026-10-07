@@ -72,7 +72,7 @@ else:   #INCORRECT
     # Question 4
     # Use a non-capitol question
 q4 == input("Which is bigger: an ocean or a sea?")
-if q4.upper () == "an ocean" or "ocean":
+if q4 == "an ocean" or "ocean" or "Ocean" or "An ocean" or "an Ocean" or "An Ocean":
     # update my counter because they got the answer correct
     counter += 1    # shorthand for counter = counter + 1
 else:   #INCORRECT
@@ -80,7 +80,7 @@ else:   #INCORRECT
     
     # Question 5
 q5 == input("Is Antartica at the North Pole or the South Pole?")
-if q5.upper() == "South Pole":
+if q5 == "South Pole":
 # update my counter because they got the answer correct
     counter += 1    # shorthand for counter = counter + 1
 else:   #INCORRECT
