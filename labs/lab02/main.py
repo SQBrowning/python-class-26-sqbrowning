@@ -1,2 +1,79 @@
 # Starting file for LAB 2
 # Include your course number, student first and last name, and date in the comment header
+
+# CS31 Lab Activity 2
+# October 7, 2026
+# Sammy Browning
+# 
+
+# Create a 5 question quiz
+# Decide a theme
+# Determine the format whether multiple choise or fill in the blank
+# Multiple choice is probably best
+
+# Output a title for the program
+print("Sammy's Mini Geography Quiz")
+print() # prints an empty line
+print("~" * 20) # print a line of 20 squiggles 
+
+# Ask the user for their name and greet them
+# Use their name again in your output
+print()
+username = input("What is your name? ")
+print(f"Hello, {username}!")    # this is an f-string format
+
+# Ask if the user would like to take a quiz
+print()
+start_quiz = input("Wanna see what you know? Y/N ")
+if start_quiz.upper() == "Y" or start_quiz == "y" or start_quiz == "Yes" or start_quiz == "yes" or "yeh" or "yuh" or "yis" or "yiss" or "yisss" or "yissss" or "yus" or "yuss" or "yusss":
+    print("Sweet! Let's check it out.")
+
+elif start_quiz == "N" or start_quiz == "n":
+    print("Aww, we'll try it another time then <3 ")
+    # run test
+
+else: # if they type an invalid response, address it
+    print("Come again, chief? Do you wanna try some Geography: Y or N?")
+
+    #put our quiz questions here all indented
+    # START OUR QUIZ QUESTIONS
+
+    # Set our counter to 0
+counter = 0
+
+    # Question 1
+
+q1 = input("In which country is Alabama located?")
+if q1 == "U.S.A." or "U.S." or "usa" or "us" or "United States" or "united states" or "Unites States of America" or "united states of america" or "America" or "America":
+        # update my counter because they got the answer correct
+        counter += 1    # shorthand for counter = counter + 1
+        print("See what I mean? You recognized one of our states.")
+else:   #INCORRECT
+    print("Already pulling my leg, huh? Maybe you want something out of the U.S. Let's try the next one.")
+
+    # Question 2
+q2 = input("What is the capitol of Japan?")
+if q2 == "Tokyo" or "tokyo":
+        # update my counter because they got the answer correct
+        counter += 1    # shorthand for counter = counter + 1
+        print("So you WERE pulling my leg. Nice job. Let's jump to another country.")
+
+
+    # Question 3
+
+
+    # Question 4
+
+
+    # Question 5
+
+    # Output the score
+print("~ ~ ~ ~ ~ DRUM ROLLLL ~ ~ ~ ~ ~")
+print(f"Your final score is: {counter}")
+
+    # Give them feedback on their overall score
+if counter == 5:
+    print("See, I knew you were a Geographer! Too easy.")
+elif counter >=3 and < 5:
+    print("You were playing with me at first but I knew you had it ;)")
+        
