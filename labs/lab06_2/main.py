@@ -1,6 +1,11 @@
 # Starting file for LAB 6-2
 # Include your course number, student first and last name, and date in the comment header
 
+# Sammy Browning
+# November 4, 2026
+# Course Number 72473
+
+# add a new column for the movie price
 def list(movie_list):
     if len(movie_list) == 0:
         print("There are no movies in the list.\n")
