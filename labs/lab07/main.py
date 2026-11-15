@@ -15,8 +15,8 @@ import csv
 # create filename for .csv file
 filename ="trips.csv"
 
-def write_trips(trips)
-    with open(filename, "w", newline="") as file:
+def write_trips(trips):
+    with open(filename, "a", newline="") as file:
         writer = csv.writer(file)
         writer.writerows(trips)
 
