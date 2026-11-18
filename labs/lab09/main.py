@@ -1,6 +1,10 @@
 # Starting file for LAB 9
 # Include your course number, student first and last name, and date in the comment header
 
+# Sammy B
+# Course 72473
+# Nov 18 2026
+
 def main():
     full_name = get_full_name()
     print()
